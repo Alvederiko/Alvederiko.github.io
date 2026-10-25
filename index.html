@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"> </script>
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body class="font-zelda">
+    <header class="z-[60] sticky top-0">
+        <nav class="relative z-[60] flex items-center justify-between
+         backdrop-filter backdrop-blur-md bg-opacity-40 sm:px-6 md:px-16 px-[90px] h-[90px]">
+            <div class="flex flex-row items-center gap-16">
+                <img class="sm:h-12 lg:h-14 w-auto" src="./images/navbar/Navbar/navbar-logo.svg" alt="Home">
+
+                <ul class="hidden lg:flex lg:flex-row gap-[64px] text-white text-[2rem]">
+                    <a class="hover:underline hover:text-[#F3B641]" href="#hero">
+                        Home</a>
+                    <a class="hover:underline hover:text-[#F3B641]" href="#aboutme">
+                        About Me</a>
+                    <a class="hover:underline hover:text-[#F3B641]" href="#myskills">
+                        My Skills</a>
+                    <a class="hover:underline hover:text-[#F3B641]" href="#Experience">
+                        My Experience</a>
+                </ul>
+            </div>
+
+            <div class="flex flex-row items-center gap-3">
+
+                <!-- ini bagian icon sosmed -->
+                <div class="hidden lg:flex lg:flex-row items-center gap-[15px]">
+                    <a href="https://x.com/HMSI_ITS" class="transition duration-200 
+                    ease-in-out hover:grayscale hover:opacity-70" target="_blank">
+                        <img class="w-11" src="./images/navbar/Navbar/x-logo.svg" alt="X">
+                    </a>
+
+                    <a href="https://x.com/HMSI_ITS" class="transition duration-200 
+                    ease-in-out hover:grayscale hover:opacity-70" target="_blank">
+                        <img class="w-11" src="./images/navbar/Navbar/tiktok-logo.svg" alt="tiktok">
+                    </a>
+
+                    <a href="https://x.com/HMSI_ITS" class="transition duration-200 
+                    ease-in-out hover:grayscale hover:opacity-70" target="_blank">
+                        <img class="w-11" src="./images/navbar/Navbar/ig-logo.svg" alt="instagram">
+                    </a>
+                    <a href="https://x.com/HMSI_ITS" class="transition duration-200 
+                    ease-in-out hover:grayscale hover:opacity-70" target="_blank">
+                        <img class="w-11" src="./images/navbar/Navbar/yt-logo.svg" alt="youtube">
+                    </a>
+                </div>
+
+                <!-- button mobile -->
+                <button id="hamburgerbtn" class="flex lg:hidden items-center justify-center w-[48px] h-[48px] bg-[#4C1C0E] rounded-lg z-[60]">
+                    <img id="iconhamburger" src="images/navbar/Navbar/menu.svg" alt="hamburger" class="h-[38.97px] w-[38.97x]">
+                    <img id="iconclose" src="images/navbar/Navbar/exit.svg" alt="hamburger" class="h-[38.97px] w-[38.97x] hidden">
+                </button>
+
+            </div>
+        </nav>
+        <!-- screen sidebar -->
+        <div id="mobileMenu" class="lg:hidden backdrop-filter w-full backdrop-blur-md bg-opacity-40 fixed insert-0 z-[50] translate-x-full transition-transform duration-250 ease-in-out">
+
+            <!-- <div class="h-[90px]"></div> -->
+
+            <ul class="flex flex-col items-center text-center py-6 text-white text-[2rem]">
+                <li class="w-full py-4"><a class="hover:underline hover:text-[#3B641]" href="hero">home</a>
+                <li class="w-full py-4"><a class="hover:underline hover:text-[#3B641]" href="about me">about me</a>
+                <li class="w-full py-4"><a class="hover:underline hover:text-[#3B641]" href="myskills">my skills</a>
+                <li class="w-full py-4"><a class="hover:underline hover:text-[#3B641]" href="Experience">experience</a>
+                </li>
+            </ul>
+        </div>
+        <script src="js/mobileNav.js"></script>
+    </header>
+    <main class="text-white">
+        <div class="fixed inset-0 -z-20 bg-cover bg-center bg-[url('./images/hero/MECHAFORGE.png')]"></div>
+        <div id="bg-overlay" class="fixed inset-0 -z-10 bg-black opacity-0 pointer-events-none"></div>
+        <!-- Section 1 - Hero -->
+        <section id="hero" class="text-center w-full flex flex-col pt-[166px] md:pt-[270.5px] justify-center items-center gap-4">
+            <h1 class="font-zelda text-center uppercase text-[4rem] md:text-[6rem] lg:text-[8rem] text-white text-center [-webkit-text-stroke:1px_#7A3D21] lg:[-webkit-text-stroke:2px_#7A3D21] text-shadow-[0_5px_0_#7A3D21] lg:text-shadow-[0_10px_0_#7A3D21] leading-none"> My Portfolio </h1>
+            <div class="flex min-w-[338px] lg:w-[700.39px] aspect-[341/43] items-center justify-center bg-[url('./images/hero/paper-scroll-hero-mobile.svg')] lg:bg-[url(./'images/hero/paper-scroll-hero-desktop.svg')] bg-center bg-cover lg:bg-contain bg-no-repeat pb-1.5">
+                <p class="text-[#7A3D21] text-[1.7rem] md:text-[2rem] font-zelda font-bold">Alvederiko junior</p>
+            </div>
+            <div class="flex w-full justify-center items-center transition-all duration-100 hover:brightness-90">
+                <a href="#aboutme" class="px-[51px] py-[4px] md:px-[119.5px] md:py-[8px] bg-[linear-gradient(to_bottom,#F36F41_0%,#F39241_50%,#F36F41_50%,#F39241_100%)] rounded-[8px] border-[#F3B641] border-[1px] outline-[#592918] outline-[1px] drop-shadow-[0_8px_0_#592918]">
+                  <p class="uppercase text-white text-[1.3rem] md:text-[1.75rem] md:leading-none">EXPLORE MORE</p>
+                </a>
+              </div>
+              
+        </section>
+
+        <!-- Section 2 - About me -->
+        <section id="aboutme" class="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-24 px-6 md:px-16 lg:px-[90px] mt-100 lg:mt-60">
+            <div class="order-2 lg:order-1 flex flex-col gap-4 max-w-[560px] text-center lg:text-left">
+                <h1
+                  class="uppercase text-[3.5rem] md:text-[4.5rem] lg:text-[6rem] text-white
+                  [-webkit-text-stroke:1px_#7A3D21] lg:[-webkit-text-stroke:2px_#7A3D21]
+                  text-shadow-[0_5px_0_#7A3D21] lg:text-shadow-[0_10px_0_#7A3D21] leading-none">
+                  ABOUT<span class="hidden lg:inline"> ME</span>
+                </h1>
+              
+                <p
+                  class="font-times text-[#F9DCB4] text-[1rem] md:text-[1.25rem] lg:text-[1.5rem] leading-snug text-justify">
+                  Hello! I'm an Information Systems student passionate about designing user-centered digital
+                  experiences and solving real-world problems through thoughtful design, business insights, and
+                  data-driven solutions.</p>
+            </div>
+              
+        
+            <p class="px-[100px] text-center text-[32px]">gw mah ganteng</p>
+
+            <div class="order-1 lg:order-2 shrink-0">
+                <div class="relative w-[240px] md:w-[280px] lg:w-[340px] aspect-[700/1040]">
+                  <img src="./images/junior.png" alt="Kartu profil" class="absolute inset-0 w-full h-full z-10 pointer-events-none" />
+                </div>
+            </div>
+              
+        </section>
+
+        <!-- Section 3 - My Skills -->
+        <section id="myskills" class="flex flex-col items-center flex justify-center mt-100">
+            <div class="flex flex-col text-center gap-4">	
+                <!-- judul + papan di sini -->
+            </div>
+        
+            <h1 class="text-[3.5rem] md:text-[4.5rem] lg:text-[6rem] text-white
+           [-webkit-text-stroke:1px_#7A3D21] lg:[-webkit-text-stroke:2px_#7A3D21]
+           text-shadow-[0_5px_0_#7A3D21] lg:text-shadow-[0_10px_0_#7A3D21] leading-none"> MY SKILLS </h1>
+            
+            <div>
+                <div class="relative">
+                    <div class="relative">
+                        <!-- Laptop dan tablet -->
+                        <img src="./images/wood plank.svg" alt="Papan kayu"
+                             class="hidden md:block lg:w-[769.08px] md:w-[500.17px]">
+                    
+                        <!-- Mobile -->
+                        <img src="./images/wood plank - mobile.svg" alt="Papan kayu"
+                             class="block md:hidden w-[25rem]">
+                    
+                        <!-- konten teks di Langkah 5 -->
+                    <div class="absolute inset-0 flex flex-col text-left px-16 pt-10 gap-1 text-[#7A3D21]">
+    
+                        <h1 class="font-zelda text-[1.5rem] md:text-[2.5rem] lg:text-[3.75rem]">Aku tertarik dengan</h1>
+                        <ul class="text-[32px] list-disc ml-8">
+                            <li class="font-zelda">coding</li>
+                            <li class="font-zelda">belajar</li>
+                            <li class="font-zelda">tidur</li>
+                            <li class="font-zelda">main game</li>
+                            <li class="font-zelda">cclim</li>
+                        </ul>
+                            <div class="flex w-full justify-center items-center transition-all duration-100">
+                                <a href="#experience"
+                                class="absolute bottom-[40px] md:bottom-[25px] lg:bottom-[50px] px-8 pt-[8px] rounded-[8px]
+                                  bg-[linear-gradient(to_bottom,#F36F41_0%,#F39241_50%,#F36F41_50%,#F39241_100%)]
+                                  border-[1px] border-[#F3B641] outline-[1px] outline-[#592918]
+                                  drop-shadow-[0_5px_0_#592918] hover:brightness-90">
+                                <p class="text-white text-[2rem] md:text-[1.5rem] lg:text-[2.5rem] leading-none">My Experience</p>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Section 4 -  My Experience -->
+        <section id="experience" class="mt-100 mb-50">
+            <div class="flex flex-col gap-[1rem] items-center">
+              <h1 class="text-[3.5rem] md:text-[4.5rem] lg:text-[6rem] text-white [-webkit-text-stroke:1px_#7A3D21] lg:[-webkit-text-stroke:2px_#7A3D21] text-shadow-[0_5px_0_#7A3D21] text-center">MY EXPERIENCE</h1>
+              <div class="flex flex-col md:flex-row gap-[1rem]">
+                <img class="w-[22.5rem] lg:w-[30rem]" src="./images/foto1.png" alt="Deskripsi foto 1">
+                <img class="w-[22.5rem] lg:w-[30rem]" src="./images/foto2.png" alt="Deskripsi foto 2">	
+              </div>
+              <div class="flex flex-col md:flex-row gap-[1rem]">
+                <img class="w-[22.5rem] lg:w-[30rem]" src="./images/foto3.png" alt="Deskripsi foto 3">
+                <img class="w-[22.5rem] lg:w-[30rem]" src="./images/foto4.png" alt="Deskripsi foto 4">
+              </div>
+            </div>
+          </section>
+          
+          
+        <script src="js/bgScrollEffect.js"></script>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full h-[500px] md:h-[350px] lg:h-[600px] 
+        bg-[url('./images/footer/footer-20261018T041950Z-1-001/footer/bg-footer.png')] bg-cover bg-center px-4 py-8 lg:px-[90px] 
+        lg:py-[88px] lg:border-t-[20px] lg:border-t-[#7A3D21] flex justify-center items-center">
+
+        <!-- FRAME Parent -->
+        <div class="flex flex-col w-full h-[440px] md:w-170 lg:w-full md:h-full 
+            bg-[url('./images/footer/footer-20261018T041950Z-1-001/footer/frame-footer-mobile.png')]
+            md:bg-[url('./images/footer/footer-20261018T041950Z-1-001/footer/frame-footer-desktop.png')] 
+            bg-center bg-contain bg-no-repeat px-6 py-10 lg:px-[20px] items-center justify-center lg:bg-[url('images/footer/frame-footer-desktop.png')], lg:w-[1000px], lg:h-full, dan lg:py-10">
+            <!-- NAVBAR -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-2 lg:gap-6">
+                <a class="text-[#C07E4E] hover:text-[#F9DCB4] text-[1.5rem] lg:text-[32px]" href="#hero">HOME</a>
+                <a class="text-[#C07E4E] hover:text-[#F9DCB4] text-[1.5rem] lg:text-[32px]" href="#aboutme">ABOUT ME</a>
+                <a class="text-[#C07E4E] hover:text-[#F9DCB4] text-[1.5rem] lg:text-[32px]" href="#myskills">MY SKILLS</a>
+                <a class="text-[#C07E4E] hover:text-[#F9DCB4] text-[1.5rem] lg:text-[32px]" href="#Experience">MY EXPERIENCE</a>
+            </div>
+
+            <!-- Copyright -->
+            <p class="font-times font-bold text-[#F9DCB4] text-[15px] lg:text-[20px] mt-4">&copy; SIMETRI HMSI ITS</p>
+        </div>
+    </footer>
+</body>
+
+</html>
